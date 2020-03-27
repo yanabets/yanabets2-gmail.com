@@ -1,0 +1,132 @@
+@import url ('https://fonts.googleapis.com/css?family=PT+Serif:400,700i&display=swap&subset=cyrillic-ext');
+
+body {
+  background: url(https://teren.in.ua/wp-content/uploads/2016/10/ezqzwDqhF_E.jpg);
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  ;
+}
+
+.conteiner {
+  display: flex;
+  position: relative;
+  margin: 10px;
+  text-align: center;
+}
+
+.conteiner .box-1 {
+  font-size: 30px;
+  flex: 2;
+  order: 2;
+  border: 3px solid #a9a5b9;
+  background: url(backname.png);
+  /*background-color: #c6cab1;*/
+  color: #000;
+  border-radius: 20px;
+}
+
+.conteiner .box-2 {
+  font-size: 25px;
+  flex: 1;
+  order: 3;
+  padding: 30px;
+  border: 3px solid #c2c2c2;
+  margin-bottom: 15px;
+  background: url(about.jpg);
+  border-radius: 15px;
+}
+
+.conteiner .box-3 {
+  font-size: 25px;
+  flex: 1;
+  order: 1;
+  padding: 30px;
+  border: 3px solid #c2c2c2;
+  margin-bottom: 15px;
+  background: url(menu.jpg);
+  border-radius: 15px;
+}
+
+.conteiner #dodatok {
+  font-size: 25px;
+}
+
+.cases {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+}
+
+.textone {
+  background: url(https://image.freepik.com/free-vector/_36991-16.jpg) no-repeat;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  font-size: 25px;
+  text-align: center;
+  border: 5px solid #f3f2f1;
+  border-radius: 10px;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-weight: 700;
+  color: #6e9694;
+  padding: 20px;
+}
+
+.cases .texttwo {
+  /*grid-column: 1/2;
+  grid-row: 1/3;*/
+  grid-column: 1/1;
+  grid-row: 1/4;
+  font-size: 25px;
+  border: 2px solid #e1e3e4;
+  border-radius: 3px;
+  color: black;
+  background: url(polufon.jpg);
+  margin: 3px;
+  padding: 3px;
+  font-family: 'PT Serif', sans-serif;
+font-weight: 600;
+}
+
+.cases .tetxthree {
+  /*  grid-column: 4/5;
+  grid-row: 1/3;*/
+  grid-column: 3/4;
+  grid-row: 1/4;
+  border: 2px solid #e1e3e4;
+  font-size: 24px;
+  color: #000;
+  background: url(polufon.jpg);
+  margin: 3px;
+  padding: 3px;
+  font-family: 'PT Serif', sans-serif;
+font-weight: 600;;
+}
+
+img {
+  margin-top: 30px;
+}
+
+.case .centerblock {
+  font-size: 25px;
+  text-align: center;
+  border: 1px solid #e1e3e4;
+  margin-left: 20%;
+  margin-right: 20%;
+  background: url(polufon.jpg);
+  text-align: center;
+  border: 5px solid #f3f2f1;
+  border-radius: 10px;
+font-family: 'PT Serif', sans-serif;
+font-weight: 600;
+}
+
+a {
+  color: #d2c20f;
+}

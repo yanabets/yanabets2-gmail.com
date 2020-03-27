@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="1234.css" type="text/css" />
+  <title>МЕНЮ2</title>
+</head>
+<style>
+  * {
+
+    background: url(menu.jpg) no-repeat;
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+
+  }
+
+
+  a.button20 {
+    position: relative;
+    top: 100px;
+    left: 80%;
+    display: inline-block;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    text-shadow: -2px 2px rgba(255, 255, 255, .3);
+    line-height: 1.1;
+    padding: .5em 3em .5em .6em;
+    background: linear-gradient(#ecc92b, #fce25b);
+    box-shadow:
+      0 0 0 1px #fce25b inset,
+      -1px 0px rgb(220, 195, 35), -1px 1px rgb(192, 167, 7),
+      -2px 1px rgb(219, 194, 34), -2px 2px rgb(191, 166, 6),
+      -3px 2px rgb(218, 193, 33), -3px 3px rgb(190, 165, 5),
+      -4px 3px rgb(217, 192, 32), -4px 4px rgb(189, 164, 4),
+      -5px 4px rgb(216, 191, 31), -5px 5px rgb(188, 163, 3),
+      -6px 5px rgb(215, 190, 30), -6px 6px rgb(187, 162, 2),
+      -7px 6px rgb(214, 189, 29), -7px 7px rgb(186, 161, 1),
+      -8px 7px rgb(213, 188, 28), -8px 8px rgb(185, 160, 0),
+      -7px 9px 1px rgba(0, 0, 0, .4),
+      -5px 11px 1px rgba(0, 0, 0, .2),
+      -1px 13px 4px rgba(0, 0, 0, .2),
+      4px 16px 7px rgba(0, 0, 0, .3);
+    transition: .4s;
+  }
+
+  a.button24 {
+    position: absolute;
+    top: 100px;
+    right: : 80%;
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: .5em 2em;
+    outline: none;
+    border-width: 2px 0;
+    border-style: solid none;
+    border-color: #FDBE33 #000 #D77206;
+    border-radius: 6px;
+    background: linear-gradient(#F3AE0F, #E38916) #E38916;
+    transition: 0.2s;
+
+  }
+
+  a.button24:hover {
+    background: linear-gradient(#f5ae00, #f59500) #f5ae00;
+  }
+
+  a.button24:active {
+    background: linear-gradient(#f59500, #f5ae00) #f59500;
+  }
+
+  a.button20:active {
+    box-shadow: none;
+    -webkit-transform: translate(-7px, 8px);
+    transform: translate(-7px, 8px);
+  }
+
+  a.button20:after {
+    content: "";
+    position: absolute;
+    top: calc(50% - .6em/2);
+    right: .6em;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    border: .37em solid;
+    border-top: none;
+    border-left: none;
+    width: .6em;
+    height: .6em;
+    box-shadow: inset -2px 2px rgba(255, 255, 255, .3);
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 8em;
+    grid-auto-rows: 150px;
+    grid-auto-rows: minmax(100px, auto);
+    justify-content: center;
+	font-family: 'PT Serif', sans-serif;
+	font-weight: 600;
+  }
+
+  .wrapper>div {
+    padding: 1em;
+    background-color: #e0daba;
+
+  }
+
+  .wrapper>div.light {
+    padding: 2em;
+    background: #fff;
+ color:#000;
+ border-radius:10px;;
+  }
+
+  .hat {
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 1px solid black;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 5px;
+    border-radius: 10px;
+    background: #c0c0c0c0;
+    color: #000;
+    font-family: 'PT Serif', sans-serif;
+    font-weight: 700;
+
+  }
+
+  .menu {
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 1px solid white;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #b4c2b7;
+  }
+
+  .textup {
+    text-align: center;
+    justify-content: center;
+    font-size: 25px;
+    border: 2px solid black;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #c1e3c8;
+    font-family: 'PT Serif', sans-serif;
+    font-weight: 500;
+    color: #fff;
+
+  }
+
+  h1 {
+    background-color: #b4c2b7;
+    color: #536356;
+    padding: 5px;
+    border-radius: 30px;
+    font-family: 'PT Serif', sans-serif;
+    font-weight: 800;
+
+  }
+</style>
+
+<body>
+  <a href="https://www.instagram.com/ya.bets/?hl=uk" target="_blank" class="button20">Замовити онлайн</a>
+  <a href="file:///C:/Users/igor/Desktop/%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/textsait.html" class="button24">Головна</a>
+  <div class="menu">
+    <h1>МЕНЮ</h1>
+
+  </div>
+  <div class="textup">
+    Меню ресторану Arbequina таке ж багатогранне, як і сам заклад! Ми приготуємо для тебе оригінальні страви — світові бестселери з тернопільською душею. А до смачної вечері найкраще пасуватиме келих вина чи авторські коктейлі від наших барменів.
+    Додатковий бонус — доставка їжі!
+  </div>
+  <div class="hat">
+    СНІДАНКИ
+  </div>
+
+  <div class="wrapper">
+    <div class="light">
+      <img src="snid1.jpg" width="300px" height=" 300px"><br><br>
+      ВАНІЛЬНІ СИРНИКИ З СМЕТАНОЮ ,<br>
+      59.00
+    </div>
+    <div class="light">
+      <img src="snid2.jpg" width="300px" height=" 300px"><br><br>
+      КЛУБНИЙ СНІДАНОК З КРУАСАНОМ, ЛОСОСЕМ ТА АВОКАДО
+      <br> 107.00
+
+    </div>
+    <div class="light">
+      <img src="snid3.jpg" width="300px" height=" 300px"><br><br>
+      МЛИНЦІ З ШИНКОЮ, СИРОМ МОЦАРЕЛЛА ТА ЯЙЦЕМ <br>
+      57.00
+
+    </div>
+    <div class="light">
+      <img src="snid4.jpg" width="300px" height=" 300px"><br><br>
+      МЛИНЦІ З НУТЕЛЛОЮ ТА БАНАНОМ <br>
+      51.00
+
+    </div>
+  </div>
+  <div class="hat">
+    ЗАКУСКИ
+  </div>
+  <div class="wrapper">
+    <div class="light">
+      <img src="zakus1.jpg" width="300px" height=" 300px"><br><br>
+      БРУСКЕТИ В ІТАЛІЙСЬКОМУ СТИЛІ <br>
+      65.00
+    </div>
+    <div class="light">
+      <img src="zakus2.jpg" width="300px" height=" 300px"><br><br>
+      АНТІПАСТІ <br>
+      107.00
+
+    </div>
+    <div class="light">
+      <img src="zakus3.jpg" width="300px" height="300px"><br><br>
+      СИРНЕ ПЛАТО ДО ВИНА <br>
+      93.00
+
+    </div>
+    <div class="light">
+      <img src="zakus4.jpg" width="300px" height=" 300px"><br><br>
+      КАПРЕЗЕ <br>
+      73.00
+
+    </div>
+  </div>
+  <div class="hat">
+    САЛАТИ
+
+  </div>
+  <div class="wrapper">
+    <div class="light">
+      <img src="salat1.jpg" width="300px" height="300px"><br>
+      <br>
+      САЛАТ З СЛАБОСОЛЕНИМ ЛОСОСЕМ ФЕТОЮ ТА ЧІА <br>
+      89.00
+    </div>
+    <div class="light">
+      <img src="salat2.jpg" width="300px" height="300px"><br><br>
+      ТЕПЛИЙ САЛАТ В ТАЙСЬКОМУ СТИЛІ З НІЖНОЮ КУРКОЮ <br>
+      66.00
+    </div>
+    <div class="light">
+      <img src="salat3.jpg" width="300px" height="300px"><br><br>
+      САЛАТ СТЕЙК <br>
+      81.00
+    </div>
+    <div class="light">
+      <img src="salat4.jpg" width="300px" height="300px"><br><br>
+      САЛАТ З НІЖНОЮ ТЕЛЯТИНОЮ ТА СИРОМ ДОР БЛЮ <br>
+      97.00
+
+    </div>
+  </div>
+  <div class="hat">
+    ПАСТА
+
+
+  </div>
+  <div class="wrapper">
+    <div class="light">
+      <img src="pasta1.jpg" width="300px" height=" 300px"><br><br>
+      ФЕТУЧІНІ З ЛОСОСЕМ <br>
+      91.00
+
+    </div>
+    <div class="light">
+      <img src="pasta2.jpg" width="300px" height=" 300px"><br><br>
+      ТОРТЕЛІНІ З ГРИБАМИ <br>
+      63.00
+
+    </div>
+    <div class="light">
+      <img src="pasta3.jpg" width="300px" height=" 300px"><br><br>
+      ТОРТЕЛІНІ З ЛОСОСЕМ, ШПИНАТОМ ТА КРЕМ-СИРОМ <br>
+      91.00
+
+    </div>
+    <div class="light">
+      <img src="pasta4.jpg" width="300px" height=" 300px"><br><br>
+      ПАСТА "ЧОТИРИ СИРА" <br>
+      75.00
+
+    </div>
+  </div>
+  <div class="hat">
+    ГАРЯЧІ СТРАВИ
+
+  </div>
+  <div class="wrapper">
+    <div class="light">
+      <img src="har1.jpg" width="300px"><br>
+      <br>
+      БУРГЕР З ТЕЛЯТИНОЮ<br>
+      93.00
+
+    </div>
+    <div class="light">
+      <img src="har2.jpg" width="300px"><br><br>
+      ДЕРУН КЛУБНИЙ З КУРКОЮ ТА ГРИБАМИ<br>
+      73.00
+
+    </div>
+    <div class="light">
+      <img src="har3.jpg" width="300px"><br><br>
+      ТАЙСЬКИЙ РИС З ОВОЧАМИ<br>
+      51.00
+
+    </div>
+    <div class="light">
+      <img src="har4.jpg" width="300px"><br><br>
+      НІЖНА КУРКА З КАРТОПЛЯНИМ ПЮРЕ ТА ГРИБНИМ СОУСОМ<br>
+      87.00
+
+    </div>
+  </div>
+  <div class="hat">
+    СТРАВИ З ГРИЛЯ
+
+
+  </div>
+  <div class="wrapper">
+    <div class="light">
+      <img src="gril1.jpg" width="300px" height=" 300px"><br><br>
+      ОВОЧІ ГРИЛЬ<br>
+      73.00
+
+    </div>
+    <div class="light">
+      <img src="gril2.jpg" width="300px" height=" 300px"><br><br>
+      СТЕЙК СВИННИЙ З ОШИЙКА<br>
+      91.00
+
+    </div>
+    <div class="light">
+      <img src="gril3.jpg" width="300px" height=" 300px"><br><br>
+      СТЕЙК З ТЕЛЯЧОЇ ВИРІЗКИ<br>
+      149.00
+
+    </div>
+    <div class="light">
+      <img src="gril4.jpg" width="300px" height=" 300px"><br><br>
+      КЛУБНІ РЕБРА BBQ<br>
+      114.00
+    </div>
+  </div>
+  <div class="hat">
+    ДЕСЕРТИ
+
+
+  </div>
+  <div class="wrapper">
+    <div class="light">
+      <img src="des1.jpg" width="300px" height=" 300px"><br><br>
+      ЧІЗ-КЕЙК З ПЮРЕ МАРАКУЇ<br>
+      61.00
+
+    </div>
+    <div class="light">
+      <img src="des2.jpg" width="300px" height=" 300px"><br><br>
+      ТІРАМІСУ<br>
+      75.00
+
+    </div>
+    <div class="light">
+      <img src="des3.jpg" width="300px" height=" 300px"><br><br>
+      ШОКОЛАДНИЙ ФОНДАН<br>
+      63.00
+
+    </div>
+    <div class="light">
+      <img src="des4.jpg" width="300px" height=" 300px"><br><br>
+      ВИШНЕВИЙ ШТРУДЕЛЬ ІЗ ЗАВАРНИМ КРЕМОМ<br>
+      61.00
+    </div>
+
+  </div>
+  <div class="hat">
+    НАПОЇ
+
+
+  </div>
+  <div class="wrapper">
+    <div class="light">
+      <img src="nap1.jpg" width="300px" height=" 300px"><br><br>
+      ВОДА
+
+    </div>
+    <div class="light">
+      <img src="nap2.jpg" width="300px" height=" 300px"><br><br>
+      КОКТЕЛІ
+
+    </div>
+    <div class="light">
+      <img src="nap3.jpg" width="300px" height=" 300px"><br><br>
+      АЛКОГОЛЬ
+
+    </div>
+    <div class="light">
+      <img src="nap4.jpg" width="300px" height=" 300px"><br><br>
+      СІК
+
+    </div>
+  </div>
+
+</body>
+
+</html>
